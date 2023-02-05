@@ -1,32 +1,65 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
-</script>
-
 <template>
     <div>
-        <a href="https://vitejs.dev" target="_blank">
-            <img src="/vite.svg" class="logo" alt="Vite logo"/>
-        </a>
-        <a href="https://vuejs.org/" target="_blank">
-            <img src="./assets/vue.svg" class="logo vue" alt="Vue logo"/>
-        </a>
+        <h3>Sports</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Event</th>
+                    <template v-for="(team, color) in $store.state.teams" :key="color">
+                        <td>{{ color }}</td>
+                    </template>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(sport, key, index) in $store.state.events.sports" :key="sport.key">
+                    <td>{{ index+1 }}.</td>
+                    <td>{{ sport.key }}</td>
+                    <template v-for="(team, key) in $store.state.teams" :key="key">
+                        <td>{{ $store.getters[`${sport.key}/scores`][key] }}</td>
+                    </template>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Litmusda</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Event</th>
+                    <template v-for="(team, color) in $store.state.teams" :key="color">
+                        <td>{{ color }}</td>
+                    </template>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(litmusda, key, index) in $store.state.events.litmusda" :key="litmusda.key">
+                    <td>{{ index+1 }}.</td>
+                    <td>{{ litmusda.name }}</td>
+                    <template v-for="(team, key) in $store.state.teams" :key="key">
+                        <td>{{ $store.getters[`${litmusda.key}/scores`][key] }}</td>
+                    </template>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <HelloWorld msg="Sportsfest Scoreboard"/>
 </template>
 
+<script lang="ts">
+    import { defineComponent } from 'vue';
+    import { EventType } from './types/Event.type';
+
+    export default defineComponent({
+        name: 'App',
+        data() {
+            return {
+
+            }
+        }
+    });
+</script>
+
 <style scoped>
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
 
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
