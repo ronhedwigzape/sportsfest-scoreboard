@@ -14,7 +14,7 @@
             <tbody>
                 <tr v-for="(sport, key, index) in $store.state.events.sports" :key="sport.key">
                     <td>{{ index+1 }}.</td>
-                    <td>{{ sport.key }}</td>
+                    <td>{{ sport.name }}</td>
                     <template v-for="(team, key) in $store.state.teams" :key="key">
                         <td>{{ $store.getters[`${sport.key}/scores`][key] }}</td>
                     </template>
