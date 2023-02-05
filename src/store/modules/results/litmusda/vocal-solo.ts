@@ -1,7 +1,7 @@
 import teams from '../../teams';
 import { litmusda } from '../../events';
 import { TeamOrderType } from '../../../../types/Team.type';
-import getScores from '../../get-scores';
+import { getScores } from '../../get-scores';
 
 const state: TeamOrderType = {
     event: litmusda.vocalSolo,
