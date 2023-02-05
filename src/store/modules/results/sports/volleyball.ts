@@ -7,8 +7,8 @@ const state: TeamOrderType = {
     event: sports.volleyball,
     results: {
         first : teams.blue,
-        second: teams.red,
-        third : teams.yellow
+        second: teams.green,
+        third : teams.red
     }
 };
 

@@ -1,6 +1,6 @@
 import { EventType } from './Event.type';
 
-export type TeamColorType = 'red' | 'yellow' | 'blue';
+export type TeamColorType = 'red' | 'green' | 'blue';
 
 export type TeamType = {
     color: TeamColorType,
