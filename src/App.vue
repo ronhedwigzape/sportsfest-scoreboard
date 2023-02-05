@@ -47,17 +47,14 @@
 </template>
 
 <script lang="ts">
-    import { defineComponent } from 'vue';
-    import { EventType } from './types/Event.type';
-
-    export default defineComponent({
+    export default {
         name: 'App',
         data() {
             return {
 
             }
         }
-    });
+    };
 </script>
 
 <style scoped>
