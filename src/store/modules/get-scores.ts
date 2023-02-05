@@ -15,10 +15,8 @@ const getScores = (state: TeamOrderType) => {
     for(let i=0; i<teamsArray.length; i++) {
         const team = teamsArray[i];
         if(state.results.first) {
-            if(team.color == state.results.first.color) {
+            if(team.color == state.results.first.color)
                 scores[team.color] = events[state.event.key].points.first;
-            }
-
         }
         if(state.results.second) {
             if(team.color == state.results.second.color)
