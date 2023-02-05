@@ -1,7 +1,7 @@
 import teams from '../../teams';
 import { sports } from '../../events';
 import { TeamOrderType } from '../../../../types/Team.type';
-import getScores from '../../get-scores';
+import { getScores } from '../../get-scores';
 
 const state: TeamOrderType = {
     event: sports.volleyball,

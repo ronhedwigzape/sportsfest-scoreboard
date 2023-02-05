@@ -9,7 +9,7 @@ const events = {
     ...litmusda
 }
 
-const getScores = (state: TeamOrderType) => {
+export const getScores = (state: TeamOrderType) => {
     let scores: TeamScoreType = {};
     const teamsArray = Object.values(teams);
     for(let i=0; i<teamsArray.length; i++) {
@@ -29,5 +29,3 @@ const getScores = (state: TeamOrderType) => {
     }
     return scores;
 };
-
-export default getScores;
