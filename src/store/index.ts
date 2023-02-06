@@ -39,7 +39,9 @@ export default createStore({
     },
 
     getters: {
-
+        teams   : state => state.teams,
+        sports  : state => state.events.sports,
+        litmusda: state => state.events.litmusda
     },
 
     mutations: {
