@@ -5,8 +5,8 @@ const teams: TeamsType = {
         color: 'red',
         name: 'Ferocious Dragons'
     },
-    yellow: {
-        color: 'yellow',
+    green: {
+        color: 'green',
         name: 'Mischievous Elves'
     },
     blue: {

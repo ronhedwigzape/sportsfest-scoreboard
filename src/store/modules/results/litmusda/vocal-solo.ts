@@ -6,9 +6,9 @@ import { getScores } from '../../get-scores';
 const state: TeamOrderType = {
     event: litmusda.vocalSolo,
     results: {
-        first : teams.blue,
-        second: teams.yellow,
-        third : teams.red
+        first : teams.red,
+        second: teams.green,
+        third : teams.blue
     }
 };
 

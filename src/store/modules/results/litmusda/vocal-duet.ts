@@ -8,7 +8,7 @@ const state: TeamOrderType = {
     results: {
         first : teams.blue,
         second: teams.red,
-        third : teams.yellow
+        third : teams.green
     }
 };
 
