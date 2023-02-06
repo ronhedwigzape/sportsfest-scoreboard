@@ -22,6 +22,15 @@ export const sports:EventsType = {
 };
 
 export const litmusda:EventsType = {
+    oration: {
+        key   : 'oration',
+        name  : 'Oration',
+        points: {
+            first : 10,
+            second: 5,
+            third : 2
+        }
+    },
     vocalSolo: {
         key   : 'vocalSolo',
         name  : 'Vocal Solo',
@@ -38,6 +47,15 @@ export const litmusda:EventsType = {
             first : 5,
             second: 3,
             third : 2
+        }
+    },
+    acousticBand: {
+        key   : 'acousticBand',
+        name  : 'Acoustic Band',
+        points: {
+            first : 8,
+            second: 6,
+            third : 4
         }
     },
 };

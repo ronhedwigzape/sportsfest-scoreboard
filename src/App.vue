@@ -7,7 +7,7 @@
                     <th></th>
                     <th>Event</th>
                     <template v-for="(team, color) in $store.state.teams" :key="color">
-                        <td>{{ color }}</td>
+                        <td>{{ team.name }}</td>
                     </template>
                 </tr>
             </thead>
@@ -29,7 +29,7 @@
                     <th></th>
                     <th>Event</th>
                     <template v-for="(team, color) in $store.state.teams" :key="color">
-                        <td>{{ color }}</td>
+                        <td>{{ team.name }}</td>
                     </template>
                 </tr>
             </thead>
