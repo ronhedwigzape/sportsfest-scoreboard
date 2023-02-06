@@ -11,20 +11,25 @@ const events = {
 
 export const getScores = (state: TeamOrderType) => {
     let scores: TeamScoreType = {};
-    const teamsArray = Object.values(teams);
-    for(let i=0; i<teamsArray.length; i++) {
-        const team = teamsArray[i];
+
+    // initialize score keys
+    for(const teamColor in teams) {
+        scores[teamColor] = 0;
+    }
+
+    // assign teams scores
+    for(const teamColor in teams) {
         if(state.results.first) {
-            if(team.color == state.results.first.color)
-                scores[team.color] = events[state.event.key].points.first;
+            if(teamColor == state.results.first.color)
+                scores[teamColor] = events[state.event.key].points.first;
         }
         if(state.results.second) {
-            if(team.color == state.results.second.color)
-                scores[team.color] = events[state.event.key].points.second;
+            if(teamColor == state.results.second.color)
+                scores[teamColor] = events[state.event.key].points.second;
         }
         if(state.results.third) {
-            if(team.color == state.results.third.color)
-                scores[team.color] = events[state.event.key].points.third;
+            if(teamColor == state.results.third.color)
+                scores[teamColor] = events[state.event.key].points.third;
         }
     }
     return scores;
