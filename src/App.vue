@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, render } from 'vue';
+import { defineComponent } from 'vue';
     import { TeamScoreType } from './types/Team.type';
     import Tabulation from './components/Tabulation.vue';
 
