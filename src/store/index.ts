@@ -11,11 +11,12 @@ import volleyball from './modules/results/sports/volleyball';
 
 // results (litmusda)
 import oration from './modules/results/litmusda/oration';
-import extempoSpeaking from './modules/results/litmusda/extempo-speaking';
+import extemporaneousSpeaking from './modules/results/litmusda/extemporaneous-speaking';
 import balagtasan from './modules/results/litmusda/balagtasan';
 import tigsik from './modules/results/litmusda/tigsik';
 import jazzChant from './modules/results/litmusda/jazz-chant';
-import vocalSolo from './modules/results/litmusda/vocal-solo';
+import vocalSoloMale from './modules/results/litmusda/vocal-solo-male';
+import vocalSoloFemale from './modules/results/litmusda/vocal-solo-female';
 import vocalDuet from './modules/results/litmusda/vocal-duet';
 import acousticBand from './modules/results/litmusda/acoustic-band';
 import jazz from './modules/results/litmusda/jazz';
@@ -52,9 +53,17 @@ export default createStore({
         basketball,
         volleyball,
         oration,
-        vocalSolo,
+        extemporaneousSpeaking,
+        balagtasan,
+        tigsik,
+        jazzChant,
+        vocalSoloMale,
+        vocalSoloFemale,
         vocalDuet,
-        acousticBand
+        acousticBand,
+        jazz,
+        folkDance,
+        hiphop
     }
 
 });

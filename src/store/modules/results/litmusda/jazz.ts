@@ -4,7 +4,7 @@ import { TeamOrderType } from '../../../../types/Team.type';
 import { getScores } from '../../get-scores';
 
 const state: TeamOrderType = {
-    event: litmusda.vocalSolo,
+    event: litmusda.jazz,
     results: {
         first : teams.red,
         second: teams.green,
