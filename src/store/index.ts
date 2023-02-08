@@ -22,6 +22,7 @@ import acousticBand from './modules/results/litmusda/acoustic-band';
 import jazz from './modules/results/litmusda/jazz';
 import folkDance from './modules/results/litmusda/folk-dance';
 import hiphop from './modules/results/litmusda/hiphop';
+import cheerDance from './modules/results/litmusda/cheer-dance';
 
 
 // results (skills)
@@ -63,7 +64,8 @@ export default createStore({
         acousticBand,
         jazz,
         folkDance,
-        hiphop
+        hiphop,
+        cheerDance
     }
 
 });
