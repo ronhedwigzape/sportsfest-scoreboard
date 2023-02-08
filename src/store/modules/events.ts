@@ -130,5 +130,13 @@ export const litmusda:EventsType = {
             third : 2
         }
     },
-
+    cheerDance: {
+        key   : 'cheerDance',
+        name  : 'Cheer Dance',
+        points: {
+            first : 10,
+            second: 5,
+            third : 2
+        }
+    },
 };
