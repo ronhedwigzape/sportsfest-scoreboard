@@ -6,9 +6,9 @@ import { getScores } from '../../get-scores';
 const state: TeamOrderType = {
     event: litmusda.tigsik,
     results: {
-        first : teams.green,
-        second: teams.red,
-        third : teams.blue
+        first : null,
+        second: null,
+        third : null
     }
 };
 

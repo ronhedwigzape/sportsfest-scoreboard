@@ -6,9 +6,9 @@ import { getScores } from '../../get-scores';
 const state: TeamOrderType = {
     event: litmusda.oration,
     results: {
-        first : teams.blue,
-        second: teams.red,
-        third : teams.green
+        first : null,
+        second: null,
+        third : null
     }
 };
 

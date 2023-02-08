@@ -6,9 +6,9 @@ import { getScores } from '../../get-scores';
 const state: TeamOrderType = {
     event: sports.volleyball,
     results: {
-        first : teams.blue,
-        second: teams.green,
-        third : teams.red
+        first : null,
+        second: null,
+        third : null
     }
 };
 
